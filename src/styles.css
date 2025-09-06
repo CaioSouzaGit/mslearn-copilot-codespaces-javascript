@@ -51,6 +51,8 @@ h1 {
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(78,86,126,0.7), 0 1px 0 #333;
 }
 
 h2 {
@@ -58,6 +60,8 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+  color: #f3f3f3;
+  text-shadow: 0 1px 8px rgba(78,86,126,0.5), 0 1px 0 #222;
 }
 
 h3 {
@@ -123,3 +127,56 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+img.socialIcon:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+}
+img.profile {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+img.profile:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+img.profile:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+/* Responsive design for very small screens */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p.large {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  p.small {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+/* End of CSS file */
